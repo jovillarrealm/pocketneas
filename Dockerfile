@@ -20,7 +20,7 @@ EXPOSE 80
 
 
 # Run the application
-CMD ["flask", "run"]
+CMD ["flask", "run", "-h", "0.0.0.0"]
 
 
 

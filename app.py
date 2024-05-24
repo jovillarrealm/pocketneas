@@ -16,13 +16,12 @@ def filosofo():
     return filosofo
 
 
-
 @app.route("/a")
 def second():
     filosofo = img(filosofos, docker_short_id)
-    html_code.replace("IMAGE_PATH", filosofo["Imagen"]).replace("PHRASE_FILOSOFICA", filosofo["Frase filosófica"]).replace("NAME", filosofo["Nombre"]).replace("CONTAINER_ID",filosofo["container_id"])
-
-
-    
-
-
+    return (
+        html_code.replace("IMAGE_PATH", filosofo["Imagen"])
+        .replace("PHRASE_FILOSOFICA", filosofo["Frase filosófica"])
+        .replace("NAME", filosofo["Nombre"])
+        .replace("CONTAINER_ID", filosofo["container_id"])
+    )

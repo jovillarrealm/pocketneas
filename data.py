@@ -93,6 +93,7 @@ html_code = """<!DOCTYPE html>
   <img src="IMAGE_PATH" alt="Image description">
 
   <p>"PHRASE_FILOSOFICA" - NAME</p>
+  <p>CONTAINER_ID</p>
 
 </body>
 </html>"""
